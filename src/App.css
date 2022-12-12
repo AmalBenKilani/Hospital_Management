@@ -2,37 +2,251 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fZichJ .item-content {
+  font-family: "Cairo", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: lighter;
+}
+.text-decoration-none {
+  font-family: "Cairo", sans-serif !important;
+  font-size: 16px;
+}
+.fa-bars {
+  margin-bottom: 0px !important;
+}
+* {
+  font-family: "Cairo", sans-serif !important;
+}
+.Sidebar.collapsed {
+  width: 52px;
+}
+.MainExp{
+  margin-left: 5px;
+}
+.Sidebar.collapsed .sidebar-icon {
+  padding-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Sidebar.collapsed .sidebar-text {
+  display: none;
+}
+.Sidebar {
+  background: #11283f;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  /* left:{({ sideBar }) => (sideBar ? '0' : '-100%')}; */
+  transition: 35ms;
+  z-index: 10;
+}
+.Maincol{
+  margin-left: 190px;
+}
+.sc-gswNZR cRvIFV sidebar-text {
+  font-family: "Cairo", sans-serif !important;
+}
+.sc-bcXHqe kZGNpp sidebar-icon {
+  font-family: "Cairo", sans-serif !important;
+}
+span {
+  font-size: 13px !important;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+}
+
+main {
+  padding: 10px !important;
+  padding-left: 62px !important;
+}
+.navbar-brand {
+  color: #2e4ead !important;
+}
+
+.arrow-component {
+  height: 2em;
+  width: 2em;
+  color: #808080;
+}
+td {
+  width: 60 !important;
+}
+.patientOption {
+  display: flex;
+  justify-content: space-around;
+}
+.patientOption button {
+  border: none;
+}
+
+.addPatient {
+  margin-left: 70%;
+  margin-bottom: 15px;
+}
+
+.modalBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-shrink: 1;
+}
+.modalBox {
   display: flex;
   flex-direction: column;
+}
+.searchAdd {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex button {
+  padding: 0px 3px 0px !important;
+  background-color: transparent !important;
+  font-size: 11px;
+  border:none;
+  color: black;
+}
+.d-flex button:hover  {
+color:  #2e4ead ;
+}
+.d-flex {
+  height: 25px;
+  font-size: 11px;
+}
+.me-2 {
+  font-size: 11px !important;
+  width: 150px !important;
+}
+
+.sr-only {
+  color: #11283f !important ;
+}
+.sr-only:hover {
+  color: #11283f !important ;
+}
+.carousel-control-next-icon{
+  background-color: #11283f !important ;
+}
+.carousel-control-prev-icon{
+  background-color: #11283f !important ;
+}
+.appointment{
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-left: 70%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.accordion-button{
+background-color: #e6e6e6 !important;
+  color: #2e4ead !important ;
+  padding: 10px !important;
+  font-size: 13px !important ;
+}
+.prescription{
+  margin-left: 2%;
+  margin-right: 6%;
+}
+.prescriptionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header1{
+  display: flex;
+  align-items: baseline;
+
+  
+}
+.header1 h6 {
+  color: #2e4ead ;
+  font-weight: bold;
+  font-size: 14px;
+}
+.header1 p {
+margin-left: 3px;
+font-size: 13px;
+}
+.prescriptionbody{
+  display: flex;
+  align-items: baseline !important ;
+  justify-content: space-around !important ;
+  
+ 
+}
+.prescription h6 {
+  font-size: 13px ;
+  font-weight: bold;
+}
+.prescriptionbody p {
+  margin-right: 10px;
+}
+.prescriptiondoc{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between ;
+  font-size: 12px;
+ 
+}
+.table1{
+  flex: 2 0 0;
+}
+.prsprob{
+  flex: 1 0 0;
+}
+.smallBox{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 15px;
+  width: 23%;
+  height: 90px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.info{
+  padding-top: 9%;
+  margin-left: 5%;
+  padding: 5%;
+  
+}
+.info h4 {
+  font-weight: bold;
+  margin-left: 3%;
+}
+.info h5{
+  font-size: 15px;
+}
+.bigIcon{
+ opacity: 0.5;
+ padding-top: 5%;
+ padding-right: 5%;
+}
+.bigBox{
+  margin-left: 3%;
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.chart{
+  margin-left: 4%;
+  margin-top: 3%;
+  margin-right: 4%;
+  width: 60%;
+  /* height: 40%; */
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
